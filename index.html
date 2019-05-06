@@ -18,7 +18,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!--My CSS--> 	
-	<link href="newcss.css" rel="stylesheet" type="text/css">
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
 
 	<!--Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Nunito">
@@ -30,5 +30,24 @@
 </head>
 
 <body>
+
+<div class="container" id="searchForm">
+
+	<div class="title"><h1>Emilie's Pokedex</h1></div>
+	<input id="input" type="text" placeholder="Enter Pokemon name"/>
+	<button type="button" class="btn btn-primary" id="search">Search</button>
+</div>
+
+<div class="container" id="result">
+
+	<div id="pic"></div>
+	<div class="text" id="idText">ID:</div><div id="id"></div>
+	<div class="text" id="nameText">Name:</div><div id="identity"></div>
+	<div class="text" id="moveText">Moves:</div><div id="moves"></div>
+	<div class="text" id="evolutionText">Evolution:</div><div id="evolution"></div>
+
+</div>
+
+<script src="javascript.js"></script>
 
 </body>

@@ -1,0 +1,41 @@
+h1 {
+	size: 80%;
+}
+
+.title {
+	margin-bottom: 30px;
+}
+
+.text {
+	font-weight: bold;
+}
+
+.container {
+	margin: 20px;
+}
+
+#idText {
+	display: none;
+	float: left;
+	margin-right: 10px;	
+}
+
+#nameText {
+	display: none;
+	float: left;
+	margin-right: 10px;
+}
+
+#moveText {
+	display: none;
+	float: left;
+	margin-right: 10px;
+}
+
+#evolutionText {
+	display: none;
+	float: left;
+	margin-right: 10px;
+}
+
+
