@@ -1,18 +1,79 @@
 h1 {
-	size: 80%;
+	font-size: 400%;
+	font-family: 'Audiowide', cursive;
+	margin-top: 0;
+	margin-left: 180px;
+	text-shadow: 4px 0 black;
+	position: relative;
+}
+
+.container-fluid {
+	margin: 20px;
+	background: #cc0000;
+	border-radius: 25px;
+	width: 50%;
+	height: 90%;
+	border: 1px solid black;
+}
+
+.top {
+	background: #cc0000;
+	margin: 10px 10px 0 10px;
 }
 
 .title {
+	width: 100%;
+	height: 20%;
+	margin-top: 0;
 	margin-bottom: 30px;
+	color: white;
+	position: relative;
 }
 
 .text {
 	font-weight: bold;
 }
 
-.container {
-	margin: 20px;
+.screen {
+	border-radius: 25px;
+	border-bottom-left-radius: 70px;
+	background: #bfbfbf; /* Grey */
+	width: 30%;
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid black;
 }
+
+.middle {
+	width: 100%;
+}
+
+input {
+	margin-top: 60px;
+	margin-left: 20px;
+  	margin-bottom: 40px;
+	width: 30%;
+	height: 40%;
+	background: #bfbfbf; /* Grey */
+	font-family: 'Press Start 2P', cursive;
+	font-weight: bold;
+}
+
+.image {
+	height: 100px;
+	width: 100px;
+}
+
+#pic {
+  	position: absolute;
+  	top: 50%;
+  	left: 30%;
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+
 
 #idText {
 	display: none;
@@ -38,4 +99,79 @@ h1 {
 	margin-right: 10px;
 }
 
+/* Buttons */
+.button1 {
+	background-color: #0066cc; /* Blue */
+  	border: 2px solid white;;
+  	margin-top: 20px;
+  	margin-right: 10px;
+  	display: inline-block;
+  	height: 80px;
+  	width: 80px;
+  	border-radius: 50%;
+  	cursor: pointer;
+}
+
+.button2 {
+	background-color: #ff6933; /* Orange */
+  	border: 2px solid white;
+  	margin-top: 0px;
+  	margin-right: 10px;
+  	display: inline-block;
+  	height: 40px;
+  	width: 40px;
+  	border-radius: 50%;
+  	cursor: pointer;
+}
+
+.button3 {
+	background-color: yellow; 
+  	border: 2px solid white;
+  	margin-top: 0px;
+  	margin-right: 10px;
+  	display: inline-block;
+  	height: 40px;
+  	width: 40px;
+  	border-radius: 50%;
+  	cursor: pointer;
+}
+
+.button4 {
+	background-color: green; 
+  	border: 2px solid white;
+  	margin-top: 0px;
+  	margin-right: 10px;
+  	display: inline-block;
+  	height: 40px;
+  	width: 40px;
+  	border-radius: 50%;
+  	cursor: pointer;
+}
+
+.button5 {
+	background-color: #0033cc; /* Blue */
+  	border: 2px solid white;
+  	margin-top: 30px;
+  	margin-left: 35px;
+  	margin-bottom: 40px;
+  	display: inline-block;
+  	height: 40px;
+  	width: 40px;
+  	border-radius: 50%;
+  	cursor: pointer;
+}
+
+.button6 {
+	background-color: #0033cc; /* Green */
+  	border: 2px solid white;
+  	margin-top: 30px;
+  	margin-left: 35px;
+  	margin-bottom: 40px;
+  	display: inline-block;
+  	height: 40px;
+  	width: 100px;
+  	cursor: pointer;
+  	font-family: 'Audiowide', cursive;
+  	color: white;
+}
 

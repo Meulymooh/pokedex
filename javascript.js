@@ -32,7 +32,7 @@ function getPokemon() {
       // Make Pokemon details appear
       id.innerHTML = data.id;
       identity.innerHTML = data.name;
-      picture.innerHTML = "<img src='" + data.sprites.front_default + "'/>";
+      picture.innerHTML = "<img class='image' src='" + data.sprites.front_default + "'/>";
       for (let i = 0; i < 4; i++) {
       moves.innerHTML += data.moves[i].move.name;
       };

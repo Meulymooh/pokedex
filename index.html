@@ -23,6 +23,8 @@
 	<!--Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Nunito">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+ 	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"> 
+ 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
 
 	<!--Other-->
 	<title>Home</title>
@@ -31,22 +33,44 @@
 
 <body>
 
-<div class="container" id="searchForm">
+<div class="container-fluid" id="searchForm">
 
-	<div class="title"><h1>Emilie's Pokedex</h1></div>
-	<input id="input" type="text" placeholder="Enter Pokemon name"/>
-	<button type="button" class="btn btn-primary" id="search">Search</button>
+	<div class="row top">
+		<button class="btn button1"></button>
+		<button class="btn button2"></button>
+		<button class="btn button3"></button>
+		<button class="btn button4"></button>
+	</div>
+
+	<div class="row title"><h1>Emilie's Pokedex</h1></div>
+	
+	<div class="row screen">
+		<div id="pic"></div>
+	</div>
+
+	<div class="row middle">
+		<button class="btn button5"></button>
+		<input class="input" id="input" type="text" placeholder="Pokemon name"/>
+		<button type="button" class="btn button6" id="search">SEARCH</button>
+
+	</div>
+
+
+	
+	
+	
+	
+
+
+		<div class="text" id="idText">ID:</div><div id="id"></div>
+		<div class="text" id="nameText">Name:</div><div id="identity"></div>
+		<div class="text" id="moveText">Moves:</div><div id="moves"></div>
+		<div class="text" id="evolutionText">Evolution:</div><div id="evolution"></div>
+
+	
+
 </div>
 
-<div class="container" id="result">
-
-	<div id="pic"></div>
-	<div class="text" id="idText">ID:</div><div id="id"></div>
-	<div class="text" id="nameText">Name:</div><div id="identity"></div>
-	<div class="text" id="moveText">Moves:</div><div id="moves"></div>
-	<div class="text" id="evolutionText">Evolution:</div><div id="evolution"></div>
-
-</div>
 
 <script src="javascript.js"></script>
 
