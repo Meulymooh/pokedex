@@ -33,41 +33,82 @@
 
 <body>
 
+
 <div class="container-fluid" id="searchForm">
 
 	<div class="row top">
-		<button class="btn button1"></button>
-		<button class="btn button2"></button>
-		<button class="btn button3"></button>
-		<button class="btn button4"></button>
+		<button class="col-md-2 btn button1"></button>
+		<button class="col-md-2 btn button2"></button>
+		<button class="col-md-2 btn button3"></button>
+		<button class="col-md-2 btn button4"></button>
 	</div>
 
 	<div class="row title"><h1>Emilie's Pokedex</h1></div>
 	
-	<div class="row screen">
-		<div id="pic"></div>
-	</div>
-
 	<div class="row middle">
-		<button class="btn button5"></button>
-		<input class="input" id="input" type="text" placeholder="Pokemon name"/>
-		<button type="button" class="btn button6" id="search">SEARCH</button>
+
+		<div class="col-md-3 screen">
+			<div class="row" id="screenText1">PICTURE</div>
+			<div class="row" id="pic"></div>
+		</div>
+
+		<div class="col-md-9 containerInfo">
+
+			<div class="row wrapperInfo">
+				<div class="col-md-3 text" id="idText">ID:</div><div class="col-md-9 details" id="id"></div>
+			</div>
+			<div class="row wrapperInfo">
+				<div class="col-md-3 text" id="nameText">Name:</div><div class="col-md-9 details" id="identity"></div>
+			</div>
+			<div class="row wrapperInfo">
+				<div class="col-md-3 text" id="moveText">Moves:</div><div class="col-md-9 details" id="moves"></div>
+			</div>
+<!-- 			<div class="row wrapperInfo">
+				<div class="col-md-3 text" id="evolutionText">Evolution:</div><div class="col-md-8" id="evolution"></div>
+			</div> -->
+
+		</div>
 
 	</div>
 
+	<div class="row bottom1">
+		<div class="col-md-3"></div>
+		<input class="col-md-4 input" id="input" type="text" placeholder="Pokemon name"/>
+		<button type="button" class="col-md-3 button5" id="search">SEARCH</button>
+	</div>
 
-	
-	
-	
-	
+		<div class="col-md-2"></div>
 
+	<div class="row bottom2">
 
-		<div class="text" id="idText">ID:</div><div id="id"></div>
-		<div class="text" id="nameText">Name:</div><div id="identity"></div>
-		<div class="text" id="moveText">Moves:</div><div id="moves"></div>
-		<div class="text" id="evolutionText">Evolution:</div><div id="evolution"></div>
+		<div class="col-md-2 text-center">
+			<div class="row">
+				<img src="directions.png" alt="arrows" id="arrows">
+			</div>
+		</div>
 
-	
+		<div class="col-md-1 text-center"></div>
+
+		<div class="col-md-8" id="alphabet">
+			<div class="row">
+				<button type="button" class="button6">A</button><button type="button" class="button6">B</button><button type="button" class="button6">A</button><button type="button" class="button6">C</button><button type="button" class="button6">D</button><button type="button" class="button6">E</button><button type="button" class="button6">F</button><button type="button" class="button6">A</button><button type="button" class="button6">A</button>
+			</div>
+
+			<div class="row">
+				<button type="button" class="button6">G</button><button type="button" class="button6">A</button><button type="button" class="button6">H</button><button type="button" class="button6">I</button><button type="button" class="button6">J</button><button type="button" class="button6">A</button><button type="button" class="button6">K</button><button type="button" class="button6">L</button><button type="button" class="button6">A</button>
+			</div>
+
+			<div class="row">
+				<button type="button" class="button6">M</button><button type="button" class="button6">N</button><button type="button" class="button6">A</button><button type="button" class="button6">O</button><button type="button" class="button6">P</button><button type="button" class="button6">Q</button><button type="button" class="button6">R</button><button type="button" class="button6">S</button><button type="button" class="button6">T</button>
+			</div>
+
+			<div class="row">
+				<button type="button" class="button6">U</button><button type="button" class="button6">V</button><button type="button" class="button6">A</button><button type="button" class="button6">W</button><button type="button" class="button6">X</button><button type="button" class="button6">Y</button><button type="button" class="button6">Z</button>
+			</div>
+
+		</div>
+
+	</div>	
 
 </div>
 

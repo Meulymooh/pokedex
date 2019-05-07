@@ -3,12 +3,21 @@ function getPokemon() {
   // HTML div variables
   var input = document.getElementById("input").value;
   var url = "https://pokeapi.co/api/v2/pokemon/";
-  var nameText = document.getElementById("nameText");
-  var moveText = document.getElementById("moveText");
-  var idText = document.getElementById("idText");
-  var evolutionText = document.getElementById("evolutionText");
+  // API variables
+  var id = document.getElementById("id");
+  var identity = document.getElementById("identity");
+  var picture = document.getElementById("pic");
+  var moves = document.getElementById("moves");
+  // var evolution = document.getElementById("evolution");
+  var screenText1 = document.getElementById("screenText1");
   
   if (input != null) {
+    // Empty fields
+	id.innerHTML = "";
+	identity.innerHTML = "";
+	picture.innerHTML = "";
+	moves.innerHTML = "";
+
     // Ajax request
     var xhr = new XMLHttpRequest();
     
@@ -16,18 +25,14 @@ function getPokemon() {
     xhr.onload = function() {
       var data = JSON.parse(xhr.response);
       
-      // API variables
-      var id = document.getElementById("id");
-      var identity = document.getElementById("identity");
-      var picture = document.getElementById("pic");
-      var moves = document.getElementById("moves");
-      var evolution = document.getElementById("evolution");
+
 
       // Make text div appear
-      nameText.style.display = "block";
-      moveText.style.display = "block";
-      idText.style.display = "block";
-      evolutionText.style.display = "block";
+      nameText.style.display = "inline-block";
+      moveText.style.display = "inline-block";
+      idText.style.display = "inline-block";
+      // evolutionText.style.display = "inline-block";
+      screenText1.style.display = "block";
 
       // Make Pokemon details appear
       id.innerHTML = data.id;
@@ -36,7 +41,7 @@ function getPokemon() {
       for (let i = 0; i < 4; i++) {
       moves.innerHTML += data.moves[i].move.name;
       };
-      evolution.innerHTML = "I have no idea how to do this";
+      // evolution.innerHTML = "";
     }    
   } else {
     alert("This Pokemon doesn't exist");

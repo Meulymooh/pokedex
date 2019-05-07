@@ -24,86 +24,116 @@ h1 {
 .title {
 	width: 100%;
 	height: 20%;
-	margin-top: 0;
+	margin-top: 30px;
 	margin-bottom: 30px;
 	color: white;
+	text-align: center;
 	position: relative;
 }
 
 .text {
+	display: none;
+	float: left;
+	font-size: 80%;
+	font-family: 'Press Start 2P', cursive;
 	font-weight: bold;
+	text-align: left;
 }
 
-.screen {
-	border-radius: 25px;
-	border-bottom-left-radius: 70px;
-	background: #bfbfbf; /* Grey */
-	width: 30%;
-	height: 200px;
-	display: block;
-	margin: 0 auto;
-	position: relative;
-	border: 1px solid black;
+.bottom1 {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.bottom2 {
+	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
 .middle {
 	width: 100%;
+	text-align: center;
+}
+
+.screen {
+	border-radius: 25px;
+	background: #b2b266; /* Greenish */
+	width: 20%;
+	height: 200px;
+	margin-left: 18%;
+	margin-right: 2%;
+	display: inline-block;
+	position: relative;
+	border: 1px solid black;
+}
+
+.containerInfo {
+	border-radius: 25px;
+	background: #b2b266; /* Greenish */
+	width: 40%;
+	height: 200px;
+	margin-left: 2%;
+	margin-right: 18%;
+	display: inline-block;
+	position: relative;
+	border: 1px solid black;	
+}
+
+.wrapperInfo {
+	margin-top: 20px;
 }
 
 input {
-	margin-top: 60px;
-	margin-left: 20px;
-  	margin-bottom: 40px;
-	width: 30%;
 	height: 40%;
 	background: #bfbfbf; /* Grey */
 	font-family: 'Press Start 2P', cursive;
 	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 20px;
 }
 
 .image {
-	height: 100px;
-	width: 100px;
+	height: 70%;
+	width: 70%;
+	margin-top: 70px;
 }
 
 #pic {
-  	position: absolute;
+/*  	position: absolute;*/
   	top: 50%;
-  	left: 30%;
+  	left: 10%;
+	text-align: center;
   	-ms-transform: translateY(-50%);
   	transform: translateY(-50%);
 }
 
-
-#idText {
+#screenText1 {
+	font-family: 'Press Start 2P', cursive;
 	display: none;
-	float: left;
-	margin-right: 10px;	
+	text-align: center;
+	margin: 20px;
 }
 
-#nameText {
-	display: none;
-	float: left;
-	margin-right: 10px;
+.details {
+	text-align: left;
 }
 
-#moveText {
-	display: none;
-	float: left;
-	margin-right: 10px;
+#arrows {
+	width: 150px;
+	margin-left: 30%;
+	text-align: center;
+	margin-top: 25%;
 }
 
-#evolutionText {
-	display: none;
-	float: left;
-	margin-right: 10px;
+#alphabet {
+	margin-left: 20px;
 }
 
 /* Buttons */
 .button1 {
 	background-color: #0066cc; /* Blue */
   	border: 2px solid white;;
-  	margin-top: 20px;
+  	margin-top: 10px;
   	margin-right: 10px;
   	display: inline-block;
   	height: 80px;
@@ -115,7 +145,7 @@ input {
 .button2 {
 	background-color: #ff6933; /* Orange */
   	border: 2px solid white;
-  	margin-top: 0px;
+  	margin-top: 20px;
   	margin-right: 10px;
   	display: inline-block;
   	height: 40px;
@@ -127,7 +157,7 @@ input {
 .button3 {
 	background-color: yellow; 
   	border: 2px solid white;
-  	margin-top: 0px;
+  	margin-top: 20px;
   	margin-right: 10px;
   	display: inline-block;
   	height: 40px;
@@ -139,7 +169,7 @@ input {
 .button4 {
 	background-color: green; 
   	border: 2px solid white;
-  	margin-top: 0px;
+  	margin-top: 20px;
   	margin-right: 10px;
   	display: inline-block;
   	height: 40px;
@@ -149,24 +179,9 @@ input {
 }
 
 .button5 {
-	background-color: #0033cc; /* Blue */
+	background-color: green; 
   	border: 2px solid white;
-  	margin-top: 30px;
-  	margin-left: 35px;
-  	margin-bottom: 40px;
-  	display: inline-block;
-  	height: 40px;
-  	width: 40px;
-  	border-radius: 50%;
-  	cursor: pointer;
-}
-
-.button6 {
-	background-color: #0033cc; /* Green */
-  	border: 2px solid white;
-  	margin-top: 30px;
-  	margin-left: 35px;
-  	margin-bottom: 40px;
+  	margin-left: 15px;
   	display: inline-block;
   	height: 40px;
   	width: 100px;
@@ -175,3 +190,18 @@ input {
   	color: white;
 }
 
+.button6 {
+	background-color: #0066cc; /* Blue */
+  	border: 2px solid white;;
+  	display: inline-block;
+  	height: 50px;
+  	width: 50px;
+  	border-radius: 20%;
+  	cursor: pointer;
+  	font-family: 'Audiowide', cursive;
+  	font-weight: bold;
+  	font-size: 120%;
+  	color: black;
+  	margin-right: 10px;
+  	margin-bottom: 10px;
+}
