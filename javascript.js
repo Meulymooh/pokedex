@@ -61,17 +61,14 @@ function getPokemon() {
 
                 // Get previous evolution picture
                 var evolutionName = data2.evolves_from_species.name;
-                  if (evolutionName) {
-                    var xhr3 = new XMLHttpRequest();
-                        xhr3.open('GET', api_1 + evolutionName, true);
-                        xhr3.onload = function() {
-                        var data = JSON.parse(xhr.response);
-                        pic2.innerHTML = "<img class='image' src='" + data.sprites.front_shiny + "'/>";
-                        } 
-                    xhr3.send();
-                  };
+                 xhr.open('GET', api_1 + evolutionName, true);
+                    xhr.onload = function() {
+                      var data = JSON.parse(xhr.response);
+                      pic2.innerHTML = "<img class='image' src='" + data.sprites.front_default + "'/>";
+                    } 
+                xhr.send();
               } 
-              xhr2.send();
+            xhr2.send();
         };
     }    
   } else {
